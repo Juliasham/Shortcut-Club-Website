@@ -2,6 +2,7 @@
   align-items: flex-end;
   justify-content: flex-end;
   flex-grow:1;
+  text-transform: uppercase;
 
 }
 ul {
@@ -18,11 +19,12 @@ li {
   align-items: flex-end;
 
   display: block;
-  padding: 13px;
+  padding: 14px;
   color: #000000;
   text-decoration: none;
   line-height:2em;
-  font-size: 20px;
+  font-size: 1.5em;
+
 }
 .logo {
   height: 50px;
@@ -54,13 +56,15 @@ margin: 10px;
 }
 
 li a:hover{
-  color: #CFC80A;
-  text-decoration: underline;
+  color:white;
+  
+  background-color:#5792f2;
 }
 body {
   display:flex;
   flex-direction: column;
   height: 100vh;
+
 }
 footer  {
   margin-top:auto;
@@ -91,7 +95,7 @@ footer > div{
   margin: 5px 10px 5px 0;
   padding: 10px;
   background-color: #fff;
-  margin-top: 35px;
+  margin-top: 45px;
 }
 .navbar1 {
   display:flex;
@@ -100,8 +104,10 @@ footer > div{
 
 .block {
   display:flex;
-  border-style: inset;
-  /*border-bottom-color: coral;*/
+  border-style:solid;
+  border-radius: 25px;
+  border-color:#8fd3f4;
+  padding: 10px;
 }
 
 .sidebar-image {
@@ -135,14 +141,18 @@ footer > div{
 }
 .block1 {
   display:flex;
-  border-style: inset;
+  border-style: solid;
   margin-top: 40px;
+  border-radius: 25px;
+  border-color:#8fd3f4;
+  padding:10px 10px;
 }
 .main1 {
   flex-grow:1;
   justify-content: space-between;
   margin-left: 30px;
   padding-top: 10px;
+  padding-right:10px;
 
 }
 .wholedescrip1 {
