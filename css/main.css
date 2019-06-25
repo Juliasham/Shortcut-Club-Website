@@ -1,0 +1,152 @@
+.topnav {
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-grow:1;
+  text-transform: uppercase;
+
+}
+ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display:inline-block;
+}
+.linktop {
+  align-items: flex-end;
+
+  display: block;
+  padding: 14px;
+  color: #000000;
+  text-decoration: none;
+  line-height:2em;
+  font-size: 1.5em;
+
+}
+.logo {
+  height: 50px;
+  width: 100px;
+  display:inline-block;
+  justify-content: flex-start;
+  /*background-color: red;*/
+
+  flex-grow:1;
+}
+
+.logo-img {
+  height:inherit;
+}
+.logo-link {
+  height: inherit;
+  width: auto;
+  display: block;
+}
+.navbar {
+  display:flex;
+  padding: 10px 20px;
+
+}
+.navbar > div{
+width: 100px;
+margin: 10px;
+
+}
+
+li a:hover{
+  color:white;
+
+  background-color:#5792f2;
+}
+body {
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial,Helvetica,sans-serif;
+
+
+}
+
+
+/* Footer Style ---- Start*/
+footer{
+	  margin-top:auto;
+	  padding: 5px 30px ;
+}
+
+
+.btmpg{
+	display: flex;
+  flex-flow: row wrap;
+
+
+}
+
+
+.bottomnav{
+	border-style: inset;
+	/*flex-grow: 3;*/
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #4dcce5 ;
+
+}
+.subscrip{
+    background-color: #f4df42;
+    border-style: inset;
+	  flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.copyright{
+  flex-grow: 1;
+  width: 100%;
+}
+.btmlnk_tag{
+
+      font-size: 1.2em;
+      text-decoration: none;
+      line-height: 2em;
+      padding: 0.5em 0.5em;
+      color: black;
+}
+.btmlnk_tag:hover{
+	color: white;
+	text-decoration:underline;
+}
+
+
+p{
+		font-size: 1.2em;
+    text-align: center;
+}
+.form{
+
+	justify-content: center;
+	display: flex;
+  margin-bottom: 15px;
+
+}
+
+.email {
+	font-size: 1rem;
+	height: 30px;
+  cursor: auto;
+}
+
+.sub   {
+
+		font-size: 15px;
+		height: 35px;
+    box-sizing: border-box;
+    border-width: 0 0 1px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Footer Style ---- End*/

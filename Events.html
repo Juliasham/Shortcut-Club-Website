@@ -2,29 +2,29 @@
 <html>
 <head>
 	<title>Shortcut Clubs</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta charset="utf-8" name="viewport" 
-        content= "width=device-width, initial-scale=1.0"> 
-    <link rel="html" type="html" href="Page2.html">
-    <link rel="html" type="html" href="Page3.html">
-    <script src="myscripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/Event.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta charset="utf-8" name="viewport"
+        content= "width=device-width, initial-scale=1.0">
+    <script src="js/myscripts.js"></script>
 
 
 
 </head>
 
 <body onload="myFunction()">
-	
+
 	<nav class ="navbar">
-		
+
 		<div class="logo">
-			<img src="Shortcut_logo_RGB_black-1024x386.png" height="100"   alt="Shortcut">
+			<a class="logo-link" href="https://theshortcut.org/">
+				<img src="image/Shortcut_logo.png" height="70"   alt="Shortcut">          </a>
 		</div>
 		<div class="topnav">
 		<ul >
-			<li><a class="navlink" href="Page1.html">Home</a></li>
-			<li><a class="navlink"href="Page2.html">Discover Clubs</a></li>
-			<li><a class="navlink" href="Page3.html">Events</a></li>
+			<li><a class="linktop" href="index.html">Home</a></li>
+			<li><a class="linktop"href="Coding club.html">Discover Clubs</a></li>
+			<li><a class="linktop" href="Events.html">Events</a></li>
 		</ul>
 		</div>
 	</nav>
@@ -79,7 +79,7 @@
 			    </tr>
 			  </thead>
 			  <tbody id="myTable">
-			    
+
 			     <tr>
 			      <td>Java Script</td>
 			      <td>XXX</td>
@@ -160,7 +160,7 @@
 			      <td>1700</td>
 			      <td>Maria01</td>
 			    </tr>
-			   
+
 
 
 
@@ -175,34 +175,44 @@
 			</table>
 		</div>
 	</article>
-		
+
 	<footer>
 		<div class="btmpg">
-			
-		
+
+
 			<nav class="bottomnav">
-				
-				<div class= "btm_links">
-					<div><a class="btmlnk_tag" href="#">JavaScript</a></div>
-					<div><a class="btmlnk_tag" href="#">React JS</a></div>
-					<div><a class="btmlnk_tag" href="#">Python</a></div>
-					<div><a class="btmlnk_tag" href="#">Girl's Coding</a></div>
-					<div><a class="btmlnk_tag" href="#">Finnish</a></div>
-				</div>
+
+				<!--div class= "btm_links"-->
+					<a class="btmlnk_tag" href="Coding club.html">JavaScript</a>
+					<a class="btmlnk_tag" href="Coding club.html">React JS</a>
+					<a class="btmlnk_tag" href="Coding club.html">Python</a>
+					<a class="btmlnk_tag" href="Coding club.html">Girl's Coding</a>
+					<a class="btmlnk_tag" href="Coding club.html">Finnish</a>
+
+
+				<!--/div-->
 			</nav>
 
+
+
 			<div class="subscrip">
-				<label>Subscribe to The Shortcut Newsletter</label>
+				<div><p>Subscribe to The Shortcut News letter</p></div>
 				<div class ="form">
-					<div class="Input">
+					<div>
 						<input class="email" type="email" name="EMAIL" placeholder="Your Email Address" required>
 					</div>
-					<div class="submit">
+					<div>
 						<input class ="sub" type="submit" value="»">
 					</div>
 				</div>
 			</div>
+
+			<div class="copyright">
+					<p id="copyright_para">&copy; 2019 The Shortcut. All Rights Reserved</p>
+			</div>
+
 		</div>
+
 	</footer>
 
 </body>

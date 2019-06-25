@@ -1,13 +1,10 @@
-
+/*
 .logo{
-	/*display: inline-block;
-	align-items: center;
-	justify-content: flex-start;*/
+
 	flex-grow: 1;
 
 }
 .topnav{
-	/*align-items: center;*/
 	justify-content: flex-end;
 	flex-grow: 1;
 
@@ -15,13 +12,9 @@
 }
 .navbar{
 		display: flex;
-		/*padding: 10px 20px;
-		height: 10vh;*/
+
 }
-/*.navbar > div{
-	width: 100px;
-  	margin: 10px;
-}*/
+
 
 .navlink {
     color: black;
@@ -35,41 +28,39 @@
 }
 .navlink:hover{
 	color: white;
-	/*text-decoration:underline;*/
 	background-color: #5792F2;
 }
 
 nav ul li {
 	display: inline-block;
 	}
-
+*/
 body{
     margin: 0;
     padding: 0;
-   /* background-color: #E6FCB3;*/
    font-family: Arial,Helvetica,sans-serif;
 
     height: 100vh;
 	display: flex;
-	flex-direction:column; 
+	flex-direction:column;
 
 
 
 }
 article{
-		  margin-top:auto; 
+		  margin-top:auto;
 		  padding: 10px 30px;
 
 }
-/* Footer Style ---- Start*/
-footer{
-	  margin-top:auto; 
+/*footer{
+	  margin-top:auto;
 	  padding: 5px 30px ;
 }
 
 
 .btmpg{
-	display: inline-flex;
+	display: flex;
+
 }
 
 
@@ -77,21 +68,27 @@ footer{
 	background-color: #84A98C;
 	border: 2px solid;
 	border-style: inset;
+	flex-grow: 3;
 
-	
+
+
 
 }
 .btm_links{
-	display: inline-block;
-	align-items: center;
-    display: block;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 .btmlnk_tag{
 		color: #262617;
 		text-decoration: none;
-		font-size: 2em;
-		line-height: 2em;
-		 padding: 0.5em 0.5em;
+
+		 line-height: 2em;
+   		 padding: 0.5em 0.5em;
+   		 text-decoration: none;
+   		 font-size: 1.5em;
 
 
 
@@ -100,31 +97,30 @@ footer{
 	color: #CFC80A;
 	text-decoration:underline;
 }
-.form{
-  	display: inline-flex;
-  	text-align: center;
-  	/*padding: 20px 30px;
-  	margin: 10px 0px;
-  	margin-left: 50px;*/
-  	
-}
 .subscrip{
 		background-color: #9EB25D;
-		padding-right: 5px;
+		padding: 5px 20px;
+
 		border-style: inset;
-		text-align: center;
-		padding-top: 20px;
+
+		flex-grow: 1;
 
 
 
 
 }
+.form{
+
+	justify-content: center;
+	display: flex;
+}
+
 label{
 		font-size: 1.5rem;
 		word-wrap: all;
 		color: #262617;
 
-    	
+
 
 }
 
@@ -132,23 +128,23 @@ label{
 .email {
 	font-size: 1rem;
 	color: #262617;
-	height: 50px;
+	height: 30px;
     margin-top: 15px;
     padding-left: 20px;
     padding-right: 150px;
     cursor: auto;
-    
 
-   
 
-	
+
+
+
 }
 
 
 .sub   {
 
 		font-size: 15px;
-		height: 55px;
+		height: 35px;
 		margin-top: 15px;
     	padding: 0 1.5em;
         padding-left: 20px;
@@ -158,11 +154,12 @@ label{
         border-radius: 3px;
         cursor: pointer;
         background-color: #9EB25D;
-  	
-	
 
-    
+
+
+
 }
+*/
 
 
 /* Footer Style ---- End*/
@@ -219,4 +216,3 @@ tr:nth-child(even) {
 tr:hover {
 	background-color: #8fd3f4;
 }
-

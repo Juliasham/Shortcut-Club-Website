@@ -5,32 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Here can add links to fonts, icons etc. customized CSS links are always in the end.-->
-    <link href="https://fonts.googleapis.com/css?family=Anton|Oxygen&display=swap" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css?family=Anton|Oxygen&display=swap" rel="stylesheet"-->
     <link rel="stylesheet" href="css/cindy.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Shortcut Clubs</title>
 </head>
 <body>
-    
+
     <!--Header with navigation menu-->
-    <nav class="header">
-        <div class="subheader_left">
-            <img src="images/Shortcut_logo_RGB_black-1024x386.png" width="150" alt="shortcut logo">
-        </div>
-        <div class="subheader_right">
-                <ul class="navlist">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Discover clubs</a></li>
-                    <li><a href="#">Events</a></li>
-                </ul>
-        </div>
-    </nav>
-    
+    <nav class ="navbar">
+
+  		<div class="logo">
+        <a class="logo-link" href="https://theshortcut.org/">
+          <img src="image/Shortcut_logo.png" height="70"   alt="Shortcut">          </a>
+          		</div>
+  		<div class="topnav">
+  		<ul >
+  			<li><a class="linktop" href="index.html">Home</a></li>
+  			<li><a class="linktop"href="Coding club.html">Discover Clubs</a></li>
+  			<li><a class="linktop" href="Events.html">Events</a></li>
+  		</ul>
+  		</div>
+  	</nav>
+
     <!--Main body -->
     <div>
         <h1 class="h1">Our Clubs</h1>
         <h2 class="h2">Discover. Encourage. Grow</h2>
         <div id="intro">
-            <div class="text_para">        
+            <div class="text_para">
                 <p>We learn together and help each other so that all people of community grow with each other. We want to replace anxiety and code fear with inspiration and motivation to learn.<br>The clubs are <span style="font-weight: bold;">FREE</span> for <span style="font-weight: bold;">ANYONE</span> who is interested in codes and passionate for coding.
                 </p>
             </div>
@@ -39,29 +42,42 @@
             </div>
         </div>
     </div>
-    
+
     <!--Footer -->
-    <div class="footer">
-        <div class="sitemap">
-            <ul class="sitemaplist">
-                <li><a href="#">Java Script Club</a></li>
-                <li><a href="#">ReactJS Club</a></li>
-                <li><a href="#">Python Club</a></li>
-                <li><a href="#">Girls' Coding Club</a></li>
-                <li><a href="#">Finnish Club</a></li>
-                <li><a href="#">Event</a></li>
-            </ul>
-        </div>
-        <div class="subscription">
-            <p>Subscribe to The Shortcut Newsletter</p>
-            <form>
-                <input type="text" name="email" value="Enter your email address" class="textbox">
-                <input type="image" src="images/elements/baseline-arrow_forward_ios-24px.svg">
-            </form>
+    <footer>
+      <div class="btmpg">
+
+
+        <nav class="bottomnav">
+
+          <!--div class= "btm_links"-->
+            <a class="btmlnk_tag" href="Coding club.html">JavaScript</a>
+            <a class="btmlnk_tag" href="Coding club.html">React JS</a>
+            <a class="btmlnk_tag" href="Coding club.html">Python</a>
+            <a class="btmlnk_tag" href="Coding club.html">Girl's Coding</a>
+            <a class="btmlnk_tag" href="Coding club.html">Finnish</a>
+
+          <!--/div-->
+        </nav>
+
+        <div class="subscrip">
+          <div><p>Subscribe to The Shortcut News letter</p></div>
+          <div class ="form">
+            <div>
+              <input class="email" type="email" name="EMAIL" placeholder="Your Email Address" required>
+            </div>
+            <div>
+              <input class ="sub" type="submit" value="»">
+            </div>
+          </div>
         </div>
         <div class="copyright">
             <p id="copyright_para">&copy; 2019 The Shortcut. All Rights Reserved</p>
         </div>
+      </div>
+
+    </footer>
+
     </div>
 
 </body>

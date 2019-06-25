@@ -1,4 +1,4 @@
-.topnav {
+/*.topnav {
   align-items: flex-end;
   justify-content: flex-end;
   flex-grow:1;
@@ -31,7 +31,7 @@ li {
   width: 100px;
   display:inline-block;
   justify-content: flex-start;
-  /*background-color: red;*/
+
 
   flex-grow:1;
 }
@@ -59,12 +59,10 @@ li a:hover{
   color:white;
 
   background-color:#5792f2;
-}
+}*/
 body {
-  display:flex;
-  flex-direction: column;
-  height: 100vh;
-
+  
+  font-family: Arial,Helvetica,sans-serif;
 }
 footer  {
   margin-top:auto;
