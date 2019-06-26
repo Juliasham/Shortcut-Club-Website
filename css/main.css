@@ -1,3 +1,5 @@
+
+/* Header Style -Starts*/
 .topnav {
   align-items: flex-end;
   justify-content: flex-end;
@@ -60,6 +62,9 @@ li a:hover{
 
   background-color:#5792f2;
 }
+
+/* Header Style -Ends*/
+
 body {
   display:flex;
   flex-direction: column;
@@ -70,7 +75,7 @@ body {
 }
 
 
-/* Footer Style ---- Start*/
+/* Footer Style ---- Starts*/
 footer{
 	  margin-top:auto;
 	  padding: 5px 30px ;
@@ -149,4 +154,59 @@ p{
     cursor: pointer;
 }
 
-/* Footer Style ---- End*/
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .btmpg  {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+    background-color: rgb(255,0,0);
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .btmpg {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+    background-color: rgb(0,255,0);
+
+  }
+}
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .btmlnk_tag  {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    font-size: 1.5em;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .btmlnk_tag {
+    /* On small screens, we are no longer using row direction but column */
+    font-size: 1.5em;
+
+
+  }
+}
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .subscrip  {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: center;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .subscrip {
+    /* On small screens, we are no longer using row direction but column */
+    justify-content: center;
+
+
+  }
+}
+
+
+
+/* Footer Style ---- Ends*/
