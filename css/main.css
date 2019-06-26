@@ -1,11 +1,10 @@
 
 /* Header Style -Starts*/
 .topnav {
-  align-items: flex-end;
   justify-content: flex-end;
   flex-grow:1;
   text-transform: uppercase;
-
+  text-align: right;
 }
 ul {
   list-style-type:none;
@@ -17,16 +16,14 @@ ul {
 li {
   display:inline-block;
 }
-.linktop {
-  align-items: flex-end;
 
+.linktop {
   display: block;
   padding: 14px;
   color: #000000;
   text-decoration: none;
   line-height:2em;
   font-size: 1.5em;
-
 }
 .logo {
   height: 50px;
@@ -68,8 +65,8 @@ li a:hover{
 body {
   display:flex;
   flex-direction: column;
-  height: 100vh;
   font-family: Arial,Helvetica,sans-serif;
+  height: 90vh;
 
 
 }
@@ -155,55 +152,51 @@ p{
 }
 
 /* Medium screens */
-@media all and (max-width: 800px) {
+/*@media all and (max-width: 800px) {
   .btmpg  {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
     justify-content: space-around;
-    background-color: rgb(255,0,0);
+  }
+  .btmlnk_tag  {
+    font-size: 1.5em;
+  }
+  .subscrip  {
+    justify-content: center;
   }
 }
-
+*/
 /* Small screens */
-@media all and (max-width: 500px) {
+@media all and (max-width: 1040px) {
+
+  .linktop {
+    display: block;
+    line-height:0.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+
+  }
+}
+@media all and (max-width: 800px) {
+
+  .linktop {
+    display: block;
+    line-height:0.5em;
+    font-size: 1em;
+    font-weight: bold;
+
+  }
   .btmpg {
     /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
-    background-color: rgb(0,255,0);
 
   }
-}
-/* Medium screens */
-@media all and (max-width: 800px) {
-  .btmlnk_tag  {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    font-size: 1.5em;
+  .bottomnav{
+    width: 100%;
   }
-}
 
-/* Small screens */
-@media all and (max-width: 500px) {
-  .btmlnk_tag {
-    /* On small screens, we are no longer using row direction but column */
-    font-size: 1.5em;
-
-
-  }
-}
-/* Medium screens */
-@media all and (max-width: 800px) {
-  .subscrip  {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    justify-content: center;
-  }
-}
-
-/* Small screens */
-@media all and (max-width: 500px) {
   .subscrip {
     /* On small screens, we are no longer using row direction but column */
     justify-content: center;
-
-
+    width: 100%;
   }
 }
 
