@@ -1,231 +1,10 @@
 
-.logo{
-	/*display: inline-block;
-	align-items: center;
-	justify-content: flex-start;*/
-	flex-grow: 1;
-
-}
-.topnav{
-	/*align-items: center;*/
-	justify-content: flex-end;
-	flex-grow: 1;
-
-
-}
-.navbar{
-		display: flex;
-		/*padding: 10px 20px;
-		height: 10vh;*/
-}
-/*.navbar > div{
-	width: 100px;
-  	margin: 10px;
-}*/
-
-.navlink {
-    color: black;
-
-    display: block;
-    line-height: 2em;
-    padding: 0.5em 0.5em;
-    text-decoration: none;
-    font-size: 1.5em;
-    text-transform: uppercase;
-}
-.navlink:hover{
-	color: white;
-	/*text-decoration:underline;*/
-	background-color: #5792F2;
-}
-
-nav ul li {
-	display: inline-block;
-	}
-
-body{
-    margin: 0;
-    padding: 0;
-   font-family: Arial,Helvetica,sans-serif;
-
-    height: 100vh;
-	display: flex;
-	flex-direction:column; 
-
-
-
-}
 article{
-		  margin-top:auto; 
+		  margin-top:auto;
+      margin-bottom: 50px;
 		  padding: 10px 30px;
 
 }
-/* Footer Style ---- Start*/
-footer{
-	  margin-top:auto; 
-	  padding: 5px 30px ;
-}
-
-
-.btmpg{
-	display: flex;
-
-}
-
-
-.bottomnav{
-	background-color: #84A98C;
-	border: 2px solid;
-	border-style: inset;
-	flex-grow: 3;
-
-
-	
-
-}
-.btm_links{
-	
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-.btmlnk_tag{
-		color: #262617;
-		text-decoration: none;
-		
-		 line-height: 2em;
-   		 padding: 0.5em 0.5em;
-   		 text-decoration: none;
-   		 font-size: 1.5em;
-
-
-
-}
-.btmlnk_tag:hover{
-	color: #CFC80A;
-	text-decoration:underline;
-}
-.subscrip{
-		background-color: #9EB25D;
-		padding: 5px 20px;
-		
-		border-style: inset;
-		/*padding-top: 20px;
-		padding-right: 5px;*/
-		flex-grow: 1;
-
-
-
-
-}
-.form{
-
-	justify-content: center;  
-	display: flex;
-}
-
-label{
-		font-size: 1.5rem;
-		word-wrap: all;
-		color: #262617;
-
-    	
-
-}
-
-
-.email {
-	font-size: 1rem;
-	color: #262617;
-	height: 30px;
-    margin-top: 15px;
-    padding-left: 20px;
-    padding-right: 150px;
-    cursor: auto;
-    
-
-   
-
-	
-}
-
-
-.sub   {
-
-		font-size: 15px;
-		height: 35px;
-		margin-top: 15px;
-    	padding: 0 1.5em;
-        padding-left: 20px;
-    	box-sizing: border-box;
-        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
-        border-width: 0 0 1px;
-        border-radius: 3px;
-        cursor: pointer;
-        background-color: #9EB25D;
-  	
-	
-
-    
-}
-
-/* Medium screens */
-@media all and (max-width: 800px) {
-  .btmpg  {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    justify-content: space-around;
-    background-color: rgb(255,0,0);
-  }
-}
-
-/* Small screens */
-@media all and (max-width: 500px) {
-  .btmpg {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
-    background-color: rgb(0,255,0);
-
-  }
-}
-/* Medium screens */
-@media all and (max-width: 800px) {
-  .btmlnk_tag  {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-   	font-size: 1.5em;
-  }
-}
-
-/* Small screens */
-@media all and (max-width: 500px) {
-  .btmlnk_tag {
-    /* On small screens, we are no longer using row direction but column */
-   	font-size: 1.5em;
-
-
-  }
-}
-/* Medium screens */
-@media all and (max-width: 800px) {
-  .subscrip  {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-   	justify-content: center;
-  }
-}
-
-/* Small screens */
-@media all and (max-width: 500px) {
-  .subscrip {
-    /* On small screens, we are no longer using row direction but column */
-   	justify-content: center;
-
-
-  }
-}
-
-
-/* Footer Style ---- End*/
-
 .input_select{
 	padding: 10px 30px;
 	position: relative;
@@ -233,31 +12,27 @@ label{
 
 }
 #club{
-	font-family: cursive;
 	font-size: 20px;
 }
 #month{
 		margin:30px;
-
-	font-family: cursive;
 	font-size: 20px;
 }
 #clublist{
-	font-family: cursive;
 	font-size: 20px;
 }
 table{
 	border-collapse: collapse;
-	  table-layout: auto;
-
+	table-layout: auto;
 	width: 100%;
 }
 th{
 	padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #7D4F50;
+  background-color: #F0A899;
   color: white;
+
 }
 td{
 		vertical-align: bottom;
@@ -278,4 +53,3 @@ tr:nth-child(even) {
 tr:hover {
 	background-color: #8fd3f4;
 }
-

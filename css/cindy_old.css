@@ -1,0 +1,59 @@
+/* GLOBAL STYLES */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+}
+
+
+/* MAIN BODY STYLES */
+h1 {
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+}
+
+#intro {
+    display: flex;
+    flex-direction: row;
+    /*padding: 2em;
+    height: 250px;*/
+    margin: 2em 2em 2em 2em;
+     /* background-color: blue;*/
+}
+
+.text_para {
+    flex-grow: 1;
+    line-height: 1.5;
+}
+
+.text_para  p{
+  text-align: left;
+}
+
+.pic_para {
+    flex-grow: 1;
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+
+.img_round {
+    border-radius: 10%;
+    width: 80%;
+}
+
+
+
+
+/* MAIN BODY - MOBILE PHONE SIZE */
+@media all and (max-width: 800px) {
+    #intro {
+        flex-direction: column;
+    }
+
+
+
+}

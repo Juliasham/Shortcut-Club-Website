@@ -1,0 +1,179 @@
+* {box-sizing: border-box}
+body {
+
+  font-family: "Lato", sans-serif;}
+
+
+/* Style the tab */
+.tab1 {
+  display:flex;
+  margin-bottom:45px;
+  border-style: solid;
+  border-color: #C1BFBF;
+  border-radius: 10px;
+  margin-right: 45px;
+  margin-left: 45px;
+  padding-bottom: 100px;
+}
+.tab {
+  /*float: left;*/
+  /*border: 1px solid #ccc;*/
+  /*background-color: #f1f1f1;*/
+  width: 30%;
+  height: 300px;
+  flex-grow:1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+/*.tab button:hover {
+  background-color: #ddd;
+}*/
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #E5E3E3;
+}
+
+/* Style the tab content */
+.tabcontent {
+  /*float: left;*/
+  padding: 0px 12px 0px 12px;
+  /*border: 1px solid #ccc;*/
+  width: 70%;
+  border-left: none;
+  height: 600px;
+  flex-grow:3;
+  margin-right: 45px;
+
+
+
+}
+/* Styly header*/
+/*.topnav {
+
+  flex-grow:1;
+  text-transform: uppercase;
+  background-color: green;
+
+
+
+}
+ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display:inline-block;
+}
+.linktop {
+  align-items: flex-end;
+
+  display: block;
+  padding: 14px;
+  color: #000000;
+  text-decoration: none;
+  line-height:2em;
+  font-size: 1.5em;
+
+}
+.logo {
+  height: 50px;
+  width: 100px;
+  display:inline-block;
+  justify-content: flex-start;
+
+
+  flex-grow:1;
+}
+
+.logo-img {
+  height:inherit;
+}
+.logo-link {
+  height: inherit;
+  width: auto;
+  display: block;
+}
+.navbar {
+  display:flex;
+  padding: 10px 20px;
+  background-color: red;
+
+
+}
+li a:hover{
+  color:white;
+
+  background-color:#5792f2;
+}*/
+.main {
+  padding-top: 20px;
+  display: flex;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-bottom: 20px;
+  /*background-color: red;*/
+
+
+
+}
+.wholedescrip {
+  margin-bottom: 15px;
+  margin-top:10px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.info {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.link1 {
+  text-align: left;
+}
+
+.sidebar-image {
+  margin-bottom: 10px;
+  /*margin-right:15px;*/
+
+
+
+}
+.descrip1 {
+  width:65%;
+}
+.descrip2 {
+/*width:100%;*/
+
+}
+.break {
+  flex-basis:100%;
+  height:0;
+}
+
+.pict1 {
+  width: 35%;
+}
+p {
+  text-align: left;
+  /*line-height: 90%;*/
+
+}
