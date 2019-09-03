@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Here can add links to fonts, icons etc. customized CSS links are always in the end.-->
+    <!--link href="https://fonts.googleapis.com/css?family=Anton|Oxygen&display=swap" rel="stylesheet"-->
+    <link rel="stylesheet" href="css/cindy.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Shortcut Clubs</title>
+</head>
+<body>
+
+    <!--Header with navigation menu-->
+    <nav class ="navbar">
+  		<div class="logo">
+        <a class="logo-link" href="https://theshortcut.org/"><img src="image/Shortcut_logo.png" height="70"   alt="Shortcut"></a>
+      </div>
+  		<div class="topnav">
+  		<ul >
+  			<li><a class="linktop" href="index.html">Home</a></li>
+  			<li><a class="linktop"href="Coding club.html">Discover Clubs</a></li>
+  			<li><a class="linktop" href="Events.html">Events</a></li>
+  		</ul>
+  		</div>
+  	</nav>
+
+    <!--Main body -->
+    <!-- STATIC TEXT AND PIC
+    <div>
+        <h1 class="h1">Our Clubs</h1>
+        <h2 class="h2">Discover. Encourage. Grow</h2>
+        <div id="intro">
+            <div class="text_para">
+              <p>The clubs are <span style="font-weight: bold;">FREE</span> for <span style="font-weight: bold;">ANYONE</span> who is interested in codes and passionate for coding.
+              </p>
+                <p>We learn together and help each other so that all people of community grow with each other. We want to replace anxiety and code fear with inspiration and motivation to learn.</p>
+
+            </div>
+            <div class="pic_para">
+                <img src="image/Team3.jpg" alt="teampic" class="img_round">
+            </div>
+        </div>
+    </div> -->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img class="slideimg"  src="image/slideshow_meeting.jpg">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img class="slideimg" src="image/slideshow_js.png">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img class="slideimg" src="image/slideshow_python.jpg">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <script src="js/index.js"></script>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <!--Footer -->
+    <footer>
+      <div class="btmpg">
+
+
+        <nav class="bottomnav">
+
+          <!--div class= "btm_links"-->
+            <a class="btmlnk_tag" href="Coding club.html#js">JavaScript</a>
+            <a class="btmlnk_tag" href="Coding club.html#rjs">React JS</a>
+            <a class="btmlnk_tag" href="Coding club.html#python">Python</a>
+            <a class="btmlnk_tag" href="Coding club.html#gcc">Girl's Coding</a>
+            <a class="btmlnk_tag" href="Coding club.html#fc">Finnish Club</a>
+          <!--/div-->
+        </nav>
+
+        <div class="subscrip">
+          <div><p>Subscribe to The Shortcut News letter</p></div>
+          <div class ="form">
+            <div>
+              <input class="email" type="email" name="EMAIL" placeholder="Your Email Address" required>
+            </div>
+            <div>
+              <input class ="sub" type="submit" value="»">
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+            <p id="copyright_para">&copy; 2019 The Shortcut. All Rights Reserved</p>
+        </div>
+      </div>
+
+    </footer>
+
+    </div>
+
+</body>
+</html>
