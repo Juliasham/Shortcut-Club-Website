@@ -7,6 +7,10 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/slideshow.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/event.css">
+        <script src="js/event.js"></script>
+        <script src="js/top.js"></script>
+
     </head>
     <body>
           <header>
@@ -18,9 +22,9 @@
               </div>
               <div  class="topnav">
                 <ul>
-                  <li><a class="linktop" href="index.html">Home</a></li>
-                  <li><a class="linktop" href="Coding club.html">Discover clubs</a></li>
-                  <li><a class="linktop" href="Events.html">Events</a></li>
+                  <!--<li><a class="linktop" href="index.html">Home</a></li>-->
+                  <li><a class="linktop" href="#club">Discover clubs</a></li>
+                  <li><a class="linktop" href="#event">Events</a></li>
                 </ul>
               </div>
           </nav>
@@ -37,14 +41,14 @@
 
           </div>
 
-          <div class="mySlides fade">  
+          <div class="mySlides fade">
             <img class="slideimg" src="image/slideshow_python.jpg">
 
           </div>
 
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          <script src="js/index.js"></script>
+          <script src="js/slideshow.js"></script>
         </div>
         <br>
 
@@ -55,10 +59,10 @@
         </div>
 
 
-<div class="tab1">
+<div  id="club" class="tab1">
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Python')" id="defaultOpen">Python Club</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">ReactJC Club</button>
+  <button class="tablinks" onclick="openCity(event, 'RJS')">ReactJS Club</button>
   <button class="tablinks" onclick="openCity(event, 'Girls')">Girls' Coding Club</button>
   <button class="tablinks" onclick="openCity(event, 'Java')">JavaScript Club</button>
   <button class="tablinks" onclick="openCity(event, 'Finnish')">Finnish Club</button>
@@ -89,7 +93,7 @@
   </div>
 </div>
 
-<div id="Paris" class="tabcontent">
+<div id="RJS" class="tabcontent">
   <div class="main">
     <div  class = "pict1">
       <img src="./reactclub-300x168.jpg" alt="" class="sidebar-image">
@@ -188,22 +192,169 @@
   </div>
 </div>
 
-<script type="text/javascript" src="js/script.js"></script>
-</div>
+<script type="text/javascript" src="js/club_info.js"></script>
 
+</div>
+<article id="event">
+  <h1>Upcoming Events</h1>
+  <div class="input_select">
+    <form>
+      <select id="club" name="club" onchange="clubsel(this.value)">
+        <optgroup id="clublist">
+          <option  value="Clubs">Clubs</option>
+          <option  value="Java Script"> Java Script</option>
+          <option  value="Python">Python</option>
+          <option  value="Girl's Coding">Girl's Coding</option>
+          <option  value="React JS">React JS</option>
+          <option value="Finnish Club">Finnish Club</option>
+        </optgroup>
+      </select>
+      <select id="month" name="month" onchange="monthsel(this.value)">
+        <optgroup id="mnthlist">
+
+          <option value="0">Month</option>
+          <option value="01">January</option>
+          <option vale="02">February</option>
+          <option value="03">March</option>
+          <option value="04">April</option>
+          <option value="05">May</option>
+          <option value="06">June</option>
+          <option value="07">July</option>
+          <option value="08">August</option>
+          <option value="09">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </optgroup>
+
+
+      </select>
+    </form>
+
+  </div>
+  <div class="table_data" style="overflow-x:auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>Club</th>
+          <th>Topic</th>
+          <th>Instructor</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Place</th>
+
+
+        </tr>
+      </thead>
+      <tbody id="myTable">
+
+         <tr>
+          <td>Java Script</td>
+          <td>XXX</td>
+          <td>YYY</td>
+          <td>17/06/19</td>
+          <td>1700</td>
+          <td>Maria01</td>
+        </tr>
+         <tr>
+          <td>Python</td>
+          <td>XXX</td>
+          <td>YYY</td>
+          <td>18/07/19</td>
+          <td>1700</td>
+          <td>Maria01</td>
+        </tr>
+         <tr>
+          <td>React JS</td>
+          <td>XXX</td>
+          <td>YYY</td>
+          <td>19/06/19</td>
+          <td>1700</td>
+          <td>Maria01</td>
+        </tr>
+         <tr>
+          <td>Girl's Coding</td>
+          <td>XXX</td>
+          <td>YYY</td>
+          <td>20/06/19</td>
+          <td>1700</td>
+          <td>Maria01</td>
+        </tr>
+         <tr>
+          <td>Finnish Club</td>
+          <td>XXX</td>
+          <td>YYY</td>
+          <td>21/06/19</td>
+          <td>1700</td>
+          <td>Maria01</td>
+        </tr>
+        <tr>
+          <td>Java Script</td>
+          <td>XXX</td>
+          <td>YYY</td>
+          <td>17/07/19</td>
+          <td>1700</td>
+          <td>Maria01</td>
+        </tr>
+         <tr>
+          <td>Python</td>
+          <td>XXX</td>
+          <td>YYY</td>
+          <td>18/07/19</td>
+          <td>1700</td>
+          <td>Maria01</td>
+        </tr>
+         <tr>
+          <td>React JS</td>
+          <td>XXX</td>
+          <td>YYY</td>
+          <td>19/07/19</td>
+          <td>1700</td>
+          <td>Maria01</td>
+        </tr>
+         <tr>
+          <td>Girl's Coding</td>
+          <td>XXX</td>
+          <td>YYY</td>
+          <td>20/07/19</td>
+          <td>1700</td>
+          <td>Maria01</td>
+        </tr>
+         <tr>
+          <td>Finnish Club</td>
+          <td>XXX</td>
+          <td>YYY</td>
+          <td>21/07/19</td>
+          <td>1700</td>
+          <td>Maria01</td>
+        </tr>
+
+
+
+
+
+      </tbody>
+      <!--tfoot>
+        <tr>
+          <td>Sum</td>
+          <td>$180</td>
+        </tr>
+      </tfoot-->
+    </table>
+  </div>
+</article>
 <footer>
   <div class="btmpg">
     <nav class="bottomnav">
-
-    <a class="btmlnk_tag" href="Coding club.html#js">  JavaScript</a>
-        <a class="btmlnk_tag" href="Coding club.html#rjs">React JS</a>
-        <a class="btmlnk_tag" href="Coding club.html#python">Python</a>
-        <a class="btmlnk_tag" href="Coding club.html#gcc">Girl's Coding</a>
-        <a class="btmlnk_tag" href="Coding club.html#fc">Finnish Club</a>
+      <a class="btmlnk_tag" onclick="openCity(event, 'Python')" href="#Python">Python</a>
+      <a class="btmlnk_tag" onclick="openCity(event, 'RJS')" href="#RJS">ReactJS Club</a>
+      <a class="btmlnk_tag" onclick="openCity(event, 'Girls')" href="#Girls" >Girl's Coding Club</a>
+      <a class="btmlnk_tag" onclick="openCity(event, 'Java')" href="#Java">JavaScript Club</a>
+      <a class="btmlnk_tag" onclick="openCity(event, 'Finnish')" href="#Finnish">Finnish Club</a>
     </nav>
 
     <div class="subscrip">
-      <div><p>Subscribe to The Shortcut News letter</p></div>
+      <div><p class="center_para">Subscribe to The Shortcut News letter</p></div>
       <div class ="form">
         <div>
           <input class="email" type="email" name="EMAIL" placeholder="Your Email Address" required>
@@ -215,10 +366,12 @@
     </div>
 
     <div class="copyright">
-        <p id="copyright_para">&copy; 2019 The Shortcut. All Rights Reserved</p>
+        <p class="center_para">&copy; 2019 The Shortcut. All Rights Reserved</p>
     </div>
 
   </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 
 </footer>
 

@@ -63,12 +63,8 @@ li a:hover{
 /* Header Style -Ends*/
 
 body {
-  /*display:flex;
-  flex-direction: column;
-  font-family: Arial,Helvetica,sans-serif;
-  height: 90vh;
-
-*/
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
 }
 
 
@@ -99,8 +95,8 @@ footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #4dcce5 ;
-
+  background-color: #4dcce5;
+  padding: 20px 20px;
 }
 .subscrip{
     background-color: #f4df42;
@@ -113,6 +109,10 @@ footer{
 .copyright{
   flex-grow: 1;
   width: 100%;
+
+}
+.center_para {
+  text-align: center;
 }
 .btmlnk_tag{
 
@@ -121,10 +121,15 @@ footer{
       line-height: 2em;
       padding: 0.5em 0.5em;
       color: black;
+
 }
 .btmlnk_tag:hover{
 	color: white;
 	text-decoration:underline;
+}
+
+a:visited {
+  background-color: #4dcce5;
 }
 
 
@@ -204,7 +209,25 @@ p{
     width: 100%;
   }
 }
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
 
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
 
 
 /* Footer Style ---- Ends*/
